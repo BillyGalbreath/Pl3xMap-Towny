@@ -7,3 +7,4 @@ authors: [ BillyGalbreath ]
 softdepend:
   - Towny
   - Pl3xMap
+  - WorldGuard
