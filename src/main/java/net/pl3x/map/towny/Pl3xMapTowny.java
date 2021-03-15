@@ -11,8 +11,8 @@ public final class Pl3xMapTowny extends JavaPlugin {
     public void onEnable() {
         Config.reload(this);
 
-        if (!getServer().getPluginManager().isPluginEnabled("WorldGuard")) {
-            getLogger().severe("WorldGuard not found!");
+        if (!getServer().getPluginManager().isPluginEnabled("Towny")) {
+            getLogger().severe("Towny not found!");
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
