@@ -21,7 +21,7 @@ public class Pl3xMapHook {
                     .showControls(Config.CONTROL_SHOW)
                     .defaultHidden(Config.CONTROL_HIDE)
                     .build();
-            world.layerRegistry().register(Key.of("worldguard_" + world.uuid()), provider);
+            world.layerRegistry().register(Key.of("towny_" + world.uuid()), provider);
             Pl3xMapTask task = new Pl3xMapTask(world, provider);
             task.runTaskTimerAsynchronously(plugin, 0, 20L * Config.UPDATE_INTERVAL);
             this.provider.put(world.uuid(), task);
